@@ -1,4 +1,4 @@
-# Rust-Gene-Calculator
+# Rust Gene Calculator
 A gene calculator for the game Rust that uses a really small amount of memory allowing for more genetic diversity by processing combinations as they come instead of saving them all and doing 1 big search. By default it will check 3 to 5 parent combinations until it finished or it found the gene with 100% chance
 ## How to use
 1. Download from [here](https://github.com/fl1k/Rust-Gene-Calculator/releases)
