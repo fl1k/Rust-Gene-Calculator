@@ -18,6 +18,10 @@ int main()
 		system("pause");
 		return 0;
 	}
+	string gene = "YYYGGG";
+	cout << "Please enter the gene you're looking for: \n";
+	cin >> gene;
+	cout << "\n";
 	ifstream ifStream("plants.txt");
 	string input;
 	int pointer = 0;
@@ -33,7 +37,7 @@ int main()
 			pointer += 7;
 		}
 	}
-	Plant perfectPlant = Plant::FindCombination(Plant("YYYYGG"), genePool, counter, 3, 5);
+	Plant perfectPlant = Plant::FindCombination(Plant(gene), genePool, counter, 3, 5);
 	cout << "Best gene combination that was found from the gene pool is: " << string(perfectPlant.genes, 6) << "\n";
 	cout << "Parents: ";
 	for (size_t i = 0; i < size(perfectPlant.parents); i++)
